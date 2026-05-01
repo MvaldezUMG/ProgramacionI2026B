@@ -1,0 +1,38 @@
+## Rider/JetBrains Temporary Files
+.idea/
+*.sln.iml
+*.sln.user
+*.iml
+*.iws
+
+## Visual Studio Temporary Files
+bin/
+obj/
+Debug/
+Release/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Resharper
+_Resharper*/
+*.[Rr]esharper
+*.DotSettings.user
+
+## Build/Package
+[Bb]in/
+[Oo]bj/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]utput/
+build/
+packages/
+
+## Mono/Unity
+mono_crash.*
+
+## Logs and Caches
+*.log
+*.tmp
+*.vs/
