@@ -36,6 +36,16 @@ public class ConexionSqlite
         Console.WriteLine("Alumno creado correctamente");
     }
 
+    public void ActualizarAlumno(Alumno alumno)
+    {
+        _conexion.Open();
+        string query =
+            "UPDATE Alumno SET Nombres=@Nombres,Apellidos=@Apellidos,Correo=@Correo,DPI=@DPI,Telefono=@Telefono WHERE Carnet=@Carnet)";
+        _conexion.Execute(query, alumno);
+        _conexion.Close();
+        Console.WriteLine("Alumno actualizado correctamente");
+    }
+    
     public List<Alumno> ListarAlumnos()
     {
         _conexion.Open();

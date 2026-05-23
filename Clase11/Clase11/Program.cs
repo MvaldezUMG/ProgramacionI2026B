@@ -1,7 +1,6 @@
 ﻿using Clase11;
 
-
-ConexionSqlite con = new ConexionSqlite("");
+ConexionSqlite con = new ConexionSqlite("Data Source=progra1.db");
 
 
 Alumno juan =  new Alumno
@@ -17,11 +16,4 @@ Alumno juan =  new Alumno
 con.EliminarAlumno(juan.Carnet);
 con.CrearAlumno(juan);
 
-List<Alumno> alumnos = con.ListarAlumnos();
-for (int i = 0; i < alumnos.Count; i++)
-{
-    Console.WriteLine(alumnos[i].Carnet + " " +  alumnos[i].Nombres);
-}
-
-Alumno juanEncontrado = con.AlumnoPorCarnet(juan.Carnet);
-Console.WriteLine(juanEncontrado.Apellidos + " " + juanEncontrado.Carnet);
+//Crear un menu que me permita realizar las operaciones indicadas.

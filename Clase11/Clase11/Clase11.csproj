@@ -12,4 +12,10 @@
       <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.7" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="progra1.db">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
